@@ -186,9 +186,9 @@ public:
         Oy.setFillColor(sf::Color::Black);
 
         // Задаётся главная точка манипулятора, рисующая точка
-        sf::CircleShape pmain{ 4.0f };
-        pmain.setOrigin(2.0f, 2.0f);
-        pmain.setFillColor(sf::Color::Green);
+        sf::CircleShape Pointmain{ 4.0f };
+        Pointmain.setOrigin(2.0f, 2.0f);
+        Pointmain.setFillColor(sf::Color::Green);
 
         // вектор для хранения массива точек манипулятора
         std::vector<Point> array;
@@ -289,7 +289,7 @@ public:
                     joint2.setRotation(solver.toDegrees(ang.a + ang.b) + 180);
                 }
 
-                pmain.setPosition(pnt.x, pnt.y);
+                Pointmain.setPosition(pnt.x, pnt.y);
             }
             /*Этот блок кода отвечает за рисование элементов робота на экране. Если значение углов было вычислено и приложение не находится 
             в режиме паузы, то программа отрисовывает все элементы робота на экране*/
