@@ -295,7 +295,7 @@ public:
             в режиме паузы, то программа отрисовывает все элементы робота на экране*/
             window.draw(joint1);
             window.draw(joint2);
-            window.draw(pmain);
+            window.draw(Pointmain);
             window.draw(text);
             window.display();
 
